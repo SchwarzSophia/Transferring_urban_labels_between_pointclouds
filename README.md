@@ -34,6 +34,10 @@ A leaf is considered as _empty leaf_ if no points are contained in its volume.
 The criterion _one label_ is fulfilled if all points in a node have the same semantic class.
 _Max depth_ is controlled by the largest permitted side length of the smallest leaf container, _maxLat_. The formula below specifies the relationship between the side length of the point cloud, the side length of the leaf and the depth of the octree.
 
+![Formula maxDepth](https://github.com/SchwarzSophia/Transferring_urban_labels_between_pointclouds/blob/main/Figures/Formula%20maxdepth.PNG)
+
+
+
 
 ## User Guide
 

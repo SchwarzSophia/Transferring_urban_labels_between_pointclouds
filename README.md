@@ -17,7 +17,9 @@ The primary contribution of this project is the development of the method for au
 The proposed method can be of great importance for data-driven deep learning algorithms as it can also allow circumventing stochastic transfer learning by deterministic label transfer between datasets depicting the same objects.
 
 ## Method description
-The developed method for the semantic label transfer between two urban point clouds consists of using an octree-based data structure, that considers semantic information as a leaf-criterium. Preceding this is a plane-based coregistration. The implementation contains an outlier removal as an additional pre-processing step. The changes between the two point clouds are identified by utilizing the octree to describe the occupancy of the octree leaves.
+The developed method for the semantic label transfer between two urban point clouds consists of using an octree-based data structure, that considers semantic information as a leaf-criterium. Preceding this is a plane-based coregistration. The implementation contains an outlier removal as an additional pre-processing step. The changes between the two point clouds are identified by utilizing the octree to describe the occupancy of the octree leaves. The method has been developed with the used case of building point clouds in mind.
+
+https://github.com/SchwarzSophia/Transferring_urban_labels_between_pointclouds/blob/main/Figures/Method%20Example.png
 
 The method of the GICP and semantic octree are briefly described here. 
 For the in-depth understanding do not hesitate to check out the paper: _add link_
@@ -32,14 +34,24 @@ Octrees are a hierarchical data structure used in computer graphics and computer
 In case of our semantic octree, we define three leaf-criteria: _empty leaf_, _one label_ and _max depth_.
 A leaf is considered as _empty leaf_ if no points are contained in its volume.
 The criterion _one label_ is fulfilled if all points in a node have the same semantic class.
-_Max depth_ is controlled by the largest permitted side length of the smallest leaf container, _maxLat_. The formula below specifies the relationship between the side length of the point cloud, the side length of the leaf and the depth of the octree.
+_Max depth_ is controlled by the largest permitted side length of the smallest leaf container, _maxLat_. The formula below specifies the relationship between the side length of the point cloud,i.e building, the side length of the leaf and the depth of the octree.
 
 ![Formula maxDepth](https://github.com/SchwarzSophia/Transferring_urban_labels_between_pointclouds/blob/main/Figures/Formula%20maxdepth.PNG)
 
+In the figure below the  utilized semantic octree is illustrated.
 
+![Illustration_Octree](https://github.com/SchwarzSophia/Transferring_urban_labels_between_pointclouds/blob/main/Figures/Octree_Illustration.PNG)
+
+If the points get sorted into an empty leaf, a new label that represents the class “addition” is assigned. This allows for a change detection in the case of added building parts. In order to detect a change the other way around, i.e. removal of building parts, it is necessary to record the queried leaves.
 
 
 ## User Guide
+
+
+
+
+
+
 
 # References
 - Besl PJ, McKay ND (1992). A method for registration of 3-D Shapes. In: IEEE Transactions on pattern analysis and machine intelligence, 14 (2): 239 – 256.

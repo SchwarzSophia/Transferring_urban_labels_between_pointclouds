@@ -17,12 +17,11 @@ The primary contribution of this project is the development of the method for au
 The proposed method can be of great importance for data-driven deep learning algorithms as it can also allow circumventing stochastic transfer learning by deterministic label transfer between datasets depicting the same objects.
 
 ## Method description
-The developed method for the semantic label transfer between two urban point clouds consists of using an octree-based data structure, that considers semantic information as a leaf-criterium. Preceding this is a plane-based coregistration. The implementation contains an outlier removal as an additional pre-processing step. The changes between the two point clouds are identified by utilizing the octree to describe the occupancy of the octree leaves. The method has been developed with the used case of building point clouds in mind. The figure below shows the workfow.
+The developed method for the semantic label transfer between two urban point clouds consists of using an octree-based data structure, that considers semantic information as a leaf-criterium. Preceding this is a plane-based coregistration. The implementation contains an outlier removal as an additional pre-processing step. The changes between the two point clouds are identified by utilizing the octree to describe the occupancy of the octree leaves. The method has been developed with the used case of building point clouds in mind. The following figure shows the workfow. The method of the GICP and semantic octree are briefly described below.For the in-depth understanding of the method, do not hesitate to check out the paper: _add link_
 
 ![Workflow](Figures/Workflow.png)
 
-The method of the GICP and semantic octree are briefly described here. 
-For the in-depth understanding do not hesitate to check out the paper: _add link_
+
 
 
 ### Generalized ICP

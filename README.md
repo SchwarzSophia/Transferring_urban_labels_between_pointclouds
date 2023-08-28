@@ -46,13 +46,30 @@ If the points get sorted into an empty leaf, a new label that represents the cla
 
 ## User Guide
 
+### Getting started
+
+This Project is implemented in Python 3.8.16 
+
+Required libaries:
+- [numpy](https://pypi.org/project/numpy/)
+- [open3d](http://www.open3d.org/)
+- [laspy](https://laspy.readthedocs.io/en/latest/)
+- [sklearn](https://scikit-learn.org/stable/)
+
+  
+
+### Data requirements
+
+The implementation requires two point clouds in the .las format.
+The input data must already be pre-processed to a certain degree. The point clouds should contain approximately the same building sections. It is also necessary to define the appropriate coordinate system and, if nessecary, apply a coarse coregistration.
+
+### Run code
 
 
 
 
 
-
-# References
+## References
 - Besl PJ, McKay ND (1992). A method for registration of 3-D Shapes. In: IEEE Transactions on pattern analysis and machine intelligence, 14 (2): 239 – 256.
 - Fernandez-Fernandez JA, Westhofen L, Löschner F, Jeske SR, Longva A, Bender J (2022). Fast octree neighborhood search for SPH simulations. ACM Trans. Graph., 41(6): 242.
 - Gehrung J, Hebel M, Arens M, Stilla U (2019). A fast voxel-based indicator for change detection using low resolution octrees. In: ISPRS Annals of the Photogrammetry, Remote Sensing and Spatial Information Sciences.  - Enschede, VI-2/WS: 357 – 364.

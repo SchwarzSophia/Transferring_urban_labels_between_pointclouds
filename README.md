@@ -62,6 +62,5 @@ If the points get sorted into an empty leaf, a new label that represents the cla
 - Segal A, Haehnel D, Thrun S (2009). Generalized-ICP. In: Robotics: Science and Systems, V: 021.
 - Shmueli B (2019). Multi-Class metrics made simple, part 3: Kappa score. Towardsdatascience.com, Internetblog. https://towardsdatascience.com/multi-class-metrics-made-simple-the-kappa-score-aka-cohens-kappa-coefficient-bdea137af09c (accessed 25.03.2023).
 - Vo AV, Truong-Hong L, Laefer DF, Bertolotto M (2015). Octree-based region growing for point cloud segmentation. In: ISPRS Journal of Photogrammetry and Remote Sensing, 104: 88 – 100.
-- Wysocki O, Hoegner L, Stilla U (2022). TUM-Façade: Reviewing and enriching point cloud benchmarks for façade segmentation. In: The International Archives of the Photogrammetry, Remote Sensing and Spatial Information - Sciences Mantua, XLVI-2/W1: 529 – 536.
-- Zhu J, Gehrung J, Huang R, Borgmann B, Sun Z, Hoegner L, Hebel M, Xu Y, Stilla U (2020). TUM-MLS-2016: An annotated mobile LiDAR dataset of the TUM city campus for semantic point cloud interpretation in urban areas. Remote Sensing Journal, 12: 1875 – 1893.
+
 

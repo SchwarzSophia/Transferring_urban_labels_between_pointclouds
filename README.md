@@ -64,7 +64,7 @@ The implementation requires two point clouds in the .las format.
 The input data must already be pre-processed to a certain degree. The point clouds should contain approximately the same building sections. It is also necessary to define the appropriate coordinate system and, if nessecary, apply a coarse coregistration.
 
 ### Run code
-
+To run the code, the paths to source point cloud(line 253), target point cloud(line 254) and output point cloud(line 316) have to be defined. 
 
 
 
